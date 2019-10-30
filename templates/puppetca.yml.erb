@@ -3,3 +3,5 @@
 :enabled: <%= @module_enabled %>
 :ssldir: <%= scope.lookupvar("foreman_proxy::ssldir") %>
 :use_provider: <%= scope.lookupvar("foreman_proxy::puppetca_provider") %>
+
+:puppet_version: <%= @puppetversion %>
