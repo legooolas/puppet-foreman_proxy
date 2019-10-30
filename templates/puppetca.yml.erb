@@ -1,7 +1,8 @@
 ---
 # PuppetCA management
 :enabled: <%= @module_enabled %>
-:ssldir: <%= scope.lookupvar("foreman_proxy::ssldir") %>
+# HACK : Set in puppetca_puppet_cert.yml instead now:
+#:ssldir: <%= scope.lookupvar("foreman_proxy::ssldir") %>
 :use_provider: <%= scope.lookupvar("foreman_proxy::puppetca_provider") %>
 
 :puppet_version: <%= @puppetversion %>
